@@ -11,7 +11,6 @@ import { HeroParallaxDemo } from "../intros/heroParallax";
 export default function HomeScreen() {
   return (
     <div className="">
-      <Hero />
       <TitleScroll />
       <HeroParallaxDemo />
       <div className="mx-12">
