@@ -7,6 +7,8 @@ import { cities } from "@/lib/data";
 import { foods } from "@/lib/data";
 import TitleScroll from "../intros/titleScroll";
 import { HeroParallaxDemo } from "../intros/heroParallax";
+import FoodScreen from "@/app/food/page";
+import CityScreen from "@/app/city/page";
 
 export default function HomeScreen() {
   return (
@@ -14,10 +16,8 @@ export default function HomeScreen() {
       <TitleScroll />
       <HeroParallaxDemo />
       <div className="mx-12">
-        {/* @ts-ignore */}
-        <FoodList foodList={foods} />
-        {/* @ts-ignore */}
-        <CityList cities={cities} />
+        <FoodScreen />
+        <CityScreen />
       </div>
     </div>
   );
